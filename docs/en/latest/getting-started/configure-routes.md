@@ -134,7 +134,6 @@ values={[
 apiVersion: gateway.networking.k8s.io/v1
 kind: HTTPRoute
 metadata:
-  namespace: ingress-apisix
   name: getting-started-ip
 spec:
   parentRefs:
@@ -157,7 +156,6 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  namespace: ingress-apisix
   name: getting-started-ip
 spec:
   ingressClassName: apisix
@@ -181,7 +179,6 @@ spec:
 apiVersion: apisix.apache.org/v2
 kind: ApisixRoute
 metadata:
-  namespace: ingress-apisix
   name: getting-started-ip
 spec:
   ingressClassName: apisix
